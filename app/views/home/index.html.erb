@@ -1,2 +1,12 @@
-<h1>Premier contact avec Ruby</h1>
-<p>Hello world !</p>
+<h1><%= @name %></h1>
+<p><%= @surname_1 %></p>
+<p><%= @surname_2 %></p>
+<p><%= @description %></p>
+<p><%= @comment %></p>
+
+
+<h2>Ses curiosités</h2>
+<% @curiosities.each do |curiosity| %>
+<p> - <%= curiosity %></p>
+
+<% end %>
